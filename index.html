@@ -292,8 +292,11 @@ d3.select(".about")
 	d3.selectAll("svg").remove();
 	d3.selectAll("table").remove();
 	d3.select(".about").text("Back to Visualization");
-	d3.select(".ptext").text("The project continues on the visualization on the land cover in dryland Asia including 17 countries. Note China here only included its 6 northwest dry provinces. These regions are defined as dryland ecosystems, as most of its area received annual precipitation less than 400mm. All lands are classified into 6 categories: Forest, Grasslands, Shrubland, Cropland, Urban, and Other (mainly barren land and inland lakes). The key message here is that users will explore scenes and find out that in dryland countries, grasslands are the major vegetated land cover, and there are also a lot of barren lands.");
-	d3.select("p.text").append("p").text("x");
+	d3.select(".ptext").text("The project continues on the visualization on the land cover in dryland Asia including 17 countries. Note China here only includes its 6 northwest dry provinces. These regions are defined as dryland ecosystems, as most of its area received annual precipitation less than 400mm. All lands are classified into 6 categories: Forest, Grasslands, Shrubland, Cropland, Urban, and Other (mainly barren land and inland lakes). The key message here is that users will explore scenes and find out that in dryland countries, grasslands are the major vegetated land cover, and there are also a lot of barren lands.");
+	d3.select("p.text").append("p")
+        .attr("id", "NewParagrap")
+        .append("text")
+        .text("This is my new text");
 	}
 	});
 
