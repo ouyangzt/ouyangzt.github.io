@@ -284,7 +284,7 @@ dashboard('#dashboard',freqData);
 d3.select(".about")
 	.on("click", function(){
 	if(d3.select(".about").text()=="Back to Visualization"){
-        d3.selectAll(".ptext").remove();
+        d3.selectAll(".ptext").text("");
 	dashboard('#dashboard',freqData);
 	d3.select(".about").text("About the Visualization");
 	}
